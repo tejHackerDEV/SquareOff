@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SquareOff</string>
+
+    <!-- Recycler View -->
+    <string name="year">Year:- %s</string>
+    <string name="dashes">No of dashes:- %d</string>
 </resources>
