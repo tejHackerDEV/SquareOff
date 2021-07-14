@@ -1,7 +1,8 @@
-package com.samba.squareoff
+package com.samba.squareoff.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.samba.squareoff.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
