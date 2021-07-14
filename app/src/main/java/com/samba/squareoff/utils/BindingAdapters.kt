@@ -4,9 +4,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
 import com.samba.squareoff.R
-import jp.wasabeef.glide.transformations.RoundedCornersTransformation
 
 @BindingAdapter("imageUrl")
 fun loadImage(view: ImageView, url: String?) {
