@@ -2,12 +2,8 @@ package com.samba.squareoff.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.ProgressBar
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.samba.squareoff.R
 import com.samba.squareoff.databinding.ActivityMainBinding

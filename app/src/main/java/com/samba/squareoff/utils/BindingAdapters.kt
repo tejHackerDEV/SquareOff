@@ -6,18 +6,32 @@ import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 import com.samba.squareoff.R
 
-@BindingAdapter("imageUrl")
-fun loadImage(view: ImageView, url: String?) {
+@BindingAdapter("imageUrl", "isPortrait")
+fun loadImage(view: ImageView, url: String?, isPortrait: Boolean) {
     if (url.isNullOrEmpty()) {
-        Glide.with(view)
-            .load("https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png")
-            .circleCrop()
-            .into(view)
+        if (isPortrait) {
+            Glide.with(view)
+                .load("https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png")
+                .circleCrop()
+                .into(view)
+        } else {
+            Glide.with(view)
+                .load("https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png")
+                .centerCrop()
+                .into(view)
+        }
     } else {
-        Glide.with(view)
-            .load(url)
-            .circleCrop()
-            .into(view)
+        if (isPortrait) {
+            Glide.with(view)
+                .load(url)
+                .circleCrop()
+                .into(view)
+        } else {
+            Glide.with(view)
+                .load(url)
+                .centerCrop()
+                .into(view)
+        }
     }
 }
 
